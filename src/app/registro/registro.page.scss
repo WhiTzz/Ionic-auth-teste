@@ -1,0 +1,107 @@
+
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove decoração de links */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Ajusta fontes para um visual mais uniforme */
+  body, ion-content {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Remove estilos padrão de listas */
+  ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Garante que botões e inputs tenham aparência consistente */
+  button, input, textarea {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  /* Remove sombras e bordas padrões em elementos do Ionic */
+  ion-button, ion-input, ion-item {
+    --border-radius: 0;
+    --box-shadow: none;
+  }
+  
+  /* Definição global para garantir responsividade */
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    background: #121212; // Fundo escuro global
+  }
+  
+  /* Força os elementos flexíveis a se ajustarem corretamente */
+  ion-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+ion-content {
+    --background: #121212; // Fundo escuro
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; // 🔥 Ajustado para ocupar toda a tela corretamente
+  }
+  
+  .registro-container {
+    background-color: #1e1e1e;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h2 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  ion-item {
+    --background: transparent;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  ion-input {
+    --background: rgba(255, 255, 255, 0.1);
+    --color: #ffffff;
+    --placeholder-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    padding: 12px;
+  }
+  
+  ion-button {
+    --background: #6200ea;
+    --color: #ffffff;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    padding: 14px;
+  }
+  

@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding login-page">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bem-vindo de volta!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [(ngModel)]= "email" type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input [(ngModel)]= "password" type="password"></ion-input>
+      </ion-item>
+      <ion-button (click) ="TryLogin()" expand="full" color="primary">Entrar</ion-button>
+      <ion-text>
+        <p>Não tem uma conta? <a href="registro">Registre-se</a></p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
